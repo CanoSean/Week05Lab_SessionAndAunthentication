@@ -1,5 +1,8 @@
 package Models;
-
+/**
+ *
+ * @author sean0
+ */
 public class User {
     private String username;
     private String password;

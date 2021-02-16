@@ -1,17 +1,18 @@
-<%-- 
-    Document   : login
-    Created on : 16-Feb-2021, 10:10:11 AM
-    Author     : sean0
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Login Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h2>Login</h2>
+        <form method="post" action="login">
+            <label>Username:</label><input type="text" name="username" value="${username}"><br>
+            <label>Password:</label><input type="password" name="password" value="${password}"><br>
+            <button value="login" name="login">Login</button><br>
+            <p>${message}</p>
+        </form>
     </body>
 </html>
